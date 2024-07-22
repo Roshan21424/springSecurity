@@ -1,7 +1,11 @@
 spring:
   application:
     name: basics
-  security:
-    user:
-      name: Roshan
-      password: 123456789
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
